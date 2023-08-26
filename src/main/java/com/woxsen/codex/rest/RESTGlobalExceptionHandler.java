@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 
 import com.woxsen.codex.exceptions.InvalidCredentialsException;
-import com.woxsen.codex.misc.ErrorResponse;
+import com.woxsen.codex.utils.ErrorResponse;
 
 @RestControllerAdvice
 public class RESTGlobalExceptionHandler {

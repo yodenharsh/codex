@@ -1,4 +1,4 @@
-package com.woxsen.codex.misc;
+package com.woxsen.codex.utils;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
