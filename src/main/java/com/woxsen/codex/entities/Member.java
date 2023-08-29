@@ -1,7 +1,8 @@
 package com.woxsen.codex.entities;
 
+import java.util.UUID;
+
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.id.uuid.UuidGenerator;
 
 import com.woxsen.codex.utils.MemberRoles;
 
@@ -19,9 +20,9 @@ public class Member {
 	
 	@Id
 	@GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name = "system-uuid", type = UuidGenerator.class)
+    @GenericGenerator(name = "system-uuid", strategy = "uuid2")
 	@Column(name = "id")
-	private int id;
+	private UUID id;
 	
 	@Column(name = "name",nullable = false)
 	private String name;
@@ -36,11 +37,11 @@ public class Member {
     @Column(name = "member-role")
 	private MemberRoles memberRole;
 
-	public int getid() {
+	public UUID getid() {
 		return id;
 	}
 
-	public void setid(int id) {
+	public void setid(UUID id) {
 		this.id = id;
 	}
 
@@ -76,7 +77,7 @@ public class Member {
 		this.memberRole = memberRole;
 	}
 
-	public Member(int id, String name, String linkedinURL, String githubURL, MemberRoles memberRole) {
+	public Member(UUID id, String name, String linkedinURL, String githubURL, MemberRoles memberRole) {
 		this.id = id;
 		this.name = name;
 		this.linkedinURL = linkedinURL;

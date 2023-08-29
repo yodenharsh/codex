@@ -1,12 +1,14 @@
-package com.woxsen.codex.dao;
+package com.woxsen.codex.service;
 
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.core.io.Resource;
+import org.springframework.web.multipart.MultipartFile;
+
 import com.woxsen.codex.entities.Member;
 
-public interface MemberDAO {
-	
+public interface MemberService {
 	public List<Member> findAll();
 	
 	public Member findById(UUID id);
@@ -17,4 +19,7 @@ public interface MemberDAO {
 	
 	public Member updateMember(UUID id, Member member);
 	
+	public String storeFile(MultipartFile file, UUID id);
+	
+	public Resource loadFileAsResource(String filename);
 }
