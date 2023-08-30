@@ -30,9 +30,9 @@ public class UserREST {
 		boolean success = userService.addUser(user);
 		
 		if(success) 
-			return new EmptyResponse(success, "200");
+			return new EmptyResponse(success, 200);
 		else
-			return new EmptyResponse(success, "401");
+			return new EmptyResponse(success, 401);
 	}
 	
 	@PostMapping("/user/login")
@@ -40,9 +40,9 @@ public class UserREST {
 		boolean success = userService.login(user);
 		
 		if(success) 
-			return new EmptyResponse(success, "200");
+			return new EmptyResponse(success, 200);
 		else
-			return new EmptyResponse(success, "401");
+			return new EmptyResponse(success, 401);
 	}
 	
 	@DeleteMapping("/user/login")
@@ -50,8 +50,8 @@ public class UserREST {
 		boolean success = userService.deleteUser(user);
 		
 		if(success)
-			return new EmptyResponse(success, "200");
+			return new EmptyResponse(success, 200);
 		else
-			return new EmptyResponse(success,"401");
+			return new EmptyResponse(success,401);
 	}
 }
