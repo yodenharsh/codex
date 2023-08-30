@@ -21,10 +21,10 @@ public class Member {
 	@Id
 	@GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid2")
-	@Column(name = "id")
+	@Column(name = "id", nullable=false)
 	private UUID id;
 	
-	@Column(name = "name",nullable = false)
+	@Column(name = "`name`")
 	private String name;
 	
 	@Column(name = "linkedin-url")

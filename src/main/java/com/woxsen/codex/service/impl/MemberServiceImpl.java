@@ -22,6 +22,8 @@ import com.woxsen.codex.exceptions.FileNotFoundException;
 import com.woxsen.codex.exceptions.FileStorageException;
 import com.woxsen.codex.service.MemberService;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class MemberServiceImpl implements MemberService {
 
@@ -44,26 +46,31 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	@Override
+	@Transactional
 	public List<Member> findAll() {
 		return memberDAO.findAll();
 	}
 
 	@Override
+	@Transactional
 	public Member findById(UUID id) {
 		return memberDAO.findById(id);
 	}
 
 	@Override
+	@Transactional
 	public UUID addMember(Member member) {
 		return memberDAO.addMember(member);
 	}
 
 	@Override
+	@Transactional
 	public boolean deleteById(UUID id) {
 		return memberDAO.deleteById(id);
 	}
 
 	@Override
+	@Transactional
 	public Member updateMember(UUID id, Member member) {
 		return memberDAO.updateMember(id, member);
 	}
