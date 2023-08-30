@@ -68,7 +68,9 @@ public class MemberDAOImpl implements MemberDAO {
 
 			if (member == null)
 				throw new RecordNotFoundException("Record with id = " + id + " not found");
-
+			
+			session.remove(member);
+			
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -92,7 +94,7 @@ public class MemberDAOImpl implements MemberDAO {
 		memberInDB.setName(member.getName());
 		memberInDB.setMemberRole(member.getMemberRole());
 		
-		return member;
+		return memberInDB;
 	}
 
 }

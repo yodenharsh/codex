@@ -4,9 +4,9 @@ public class EmptyResponse {
 	
 	private boolean success;
 	
-	private String statusCode;
+	private int statusCode;
 
-	public EmptyResponse(boolean success, String statusCode) {
+	public EmptyResponse(boolean success, int statusCode) {
 		this.success = success;
 		this.statusCode = statusCode;
 	}
@@ -19,11 +19,11 @@ public class EmptyResponse {
 		this.success = success;
 	}
 
-	public String getStatusCode() {
+	public int getStatusCode() {
 		return statusCode;
 	}
 
-	public void setStatusCode(String statusCode) {
+	public void setStatusCode(int statusCode) {
 		this.statusCode = statusCode;
 	}
 	

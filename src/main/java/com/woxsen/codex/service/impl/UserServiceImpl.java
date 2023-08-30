@@ -26,11 +26,13 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
+	@Transactional
 	public boolean login(User user) {
 		return userDAO.login(user);
 	}
 
 	@Override
+	@Transactional
 	public boolean deleteUser(User user) {
 		return userDAO.deleteUser(user);
 	}

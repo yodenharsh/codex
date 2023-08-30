@@ -1,3 +1,24 @@
-/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codeX backend/codex/src/main/java/com/woxsen/codex/CodexApplication.java
-/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codeX backend/codex/src/main/java/com/woxsen/codex/configurations/CustomWebSecurityConfigurerAdapter.java
-/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codeX backend/codex/src/main/java/com/woxsen/codex/entities/User.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/exceptions/InvalidCredentialsException.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/configuration/SecurityConfiguration.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/CodexApplication.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/utils/EmptyResponse.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/dao/MemberDAO.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/service/UserService.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/configuration/StorageProperties.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/exceptions/FileNotFoundException.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/entities/User.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/service/MemberService.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/dao/impl/UserDAOImpl.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/rest/RESTGlobalExceptionHandler.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/exceptions/RecordNotFoundException.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/service/impl/MemberServiceImpl.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/service/impl/UserServiceImpl.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/utils/ErrorResponse.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/dao/impl/MemberDAOImpl.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/exceptions/FileStorageException.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/entities/Member.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/rest/UserREST.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/utils/FileResponse.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/dao/UserDAO.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/rest/MemberREST.java
+/home/yodenharsh/Documents/Coding/For Woxsen/codeX/codex-website-backend/src/main/java/com/woxsen/codex/utils/MemberRoles.java

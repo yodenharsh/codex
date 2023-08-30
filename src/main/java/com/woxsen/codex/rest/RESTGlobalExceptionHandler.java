@@ -1,6 +1,7 @@
 package com.woxsen.codex.rest;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -40,6 +41,13 @@ public class RESTGlobalExceptionHandler {
 	@ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
 	public ErrorResponse fileStorageExceptionHandler(FileStorageException e, WebRequest request) {
 		ErrorResponse erMsg = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR, e.getMessage(), "false");
+		return erMsg;
+	}
+	
+	@ExceptionHandler(value = HttpMessageNotReadableException.class)
+	@ResponseStatus(value = HttpStatus.BAD_REQUEST)
+	public ErrorResponse httpMessageNotReadableExceptionHandler(HttpMessageNotReadableException e, WebRequest request) {
+		ErrorResponse erMsg = new ErrorResponse(HttpStatus.BAD_REQUEST, e.getMessage(), "false");
 		return erMsg;
 	}
 }
