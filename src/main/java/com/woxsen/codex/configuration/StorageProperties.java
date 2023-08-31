@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 public class StorageProperties {
 	
 	private String memberPhotoImage;
+	private String eventImage;
 
 	public String getMemberPhotoImage() {
 		return memberPhotoImage;
@@ -15,6 +16,14 @@ public class StorageProperties {
 
 	public void setMemberPhotoImage(String memberPhotoImage) {
 		this.memberPhotoImage = memberPhotoImage;
+	}
+
+	public String getEventImage() {
+		return eventImage;
+	}
+
+	public void setEventImage(String eventImage) {
+		this.eventImage = eventImage;
 	}
 	
 	
