@@ -45,7 +45,7 @@ public class UserREST {
 			return new EmptyResponse(success, 401);
 	}
 	
-	@DeleteMapping("/user/login")
+	@DeleteMapping("/user")
 	public EmptyResponse deleteUser(@RequestBody User user) {
 		boolean success = userService.deleteUser(user);
 		
